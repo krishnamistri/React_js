@@ -1,0 +1,51 @@
+.movie_container {
+  min-height: 100vh;
+  background-color: #0f0e0e;
+  padding: 40px;
+}
+
+.heading {
+  text-align: center;
+  color: #e50914;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.movie_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.movie_card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie_card:hover {
+  transform: scale(1.08);
+}
+
+/* Image */
+.movie_card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Title */
+.movie_card h3 {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Remove link style */
+.movie_card a {
+  text-decoration: none;
+}
