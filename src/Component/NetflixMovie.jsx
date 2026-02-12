@@ -1,6 +1,7 @@
 import React from "react";
-import "./NetflixMovie.css";
+import "./NetflixMovie.css";      
 import { Link } from "react-router-dom";
+
 
 export const NetflixMovies = () => {
 
@@ -9,6 +10,7 @@ export const NetflixMovies = () => {
       movieId: 1,
       movieName: "DoctorStrange",
       image: "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"
+      
     },
     {
       movieId: 2,

@@ -11,16 +11,34 @@ export const Navbar = () => {
 
       {/* Links */}
       <Link to="/" style={styles.link}>
-        HOME
+          TVSHOWS 
       </Link>
 
       <Link to="/netflixhome" style={styles.link}>
-        MOVIE
+       HOME
       </Link>
 
       <Link to="/netflixMovie" style={styles.link}>
-        TV SHOWS
+         MOVIE  
       </Link>
+
+      <Link to="/functiodemo1" style={styles.link}>
+         FunctionDemo1
+      </Link>
+
+      <Link to="/UseState1" style={styles.link}>
+         UseStateDemo1
+      </Link>
+      
+       <Link to="/UseState2" style={styles.link}>
+         UseStateDemo2
+      </Link>
+
+      <Link to="/UseState3" style={styles.link}>
+         UseStateDemo3
+      </Link>
+
+
 
     </div>
   );
@@ -28,11 +46,13 @@ export const Navbar = () => {
 
 const styles = {
   nav: {
+    
     display: "flex",
     alignItems: "center",
     background: "#0f0e0e",
     padding: "5px",
   },
+
 
   logo: {
     width: "190px",

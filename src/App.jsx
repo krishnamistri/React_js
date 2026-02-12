@@ -15,11 +15,12 @@ import { HomeComponent } from "./Component/HomeComponent";
 import { NetflixHome } from "./Component/NetflixHome";
 import { Navbar } from "./Component/Navbar"; 
 import { NetflixMovies } from "./Component/NetflixMovie";
-
-
-
-
-
+import { ErrorNotFound } from "./Component/ErrorNotFound";
+import { Watch } from "./Component/Watch";
+import { FunctionDemo1 } from "./Component/FunctonDemo";
+import { UseStateDemo1 } from "./Component/UseStateDemo1";
+import { UseStateDemo2 } from "./Component/UseStateDemo2";
+import { UseStateDemo3 } from "./Component/UseStateDemo3";
 function App() {
 
   return (
@@ -33,7 +34,13 @@ function App() {
         <Route path="/"element= {<HomeComponent/>}></Route>
          <Route path="/netflixhome" element={<NetflixHome />}></Route>
          <Route path="/netflixmovie" element={<NetflixMovies />}></Route>
-
+            <Route path="*" element = {<ErrorNotFound/>}></Route>
+            <Route path="/*" element = {<Watch/>}></Route>
+            <Route path="/functiodemo1" element = {<FunctionDemo1/>}></Route>
+            <Route path="/UseState1" element = {<UseStateDemo1/>}></Route>
+            <Route path="/UseState2" element = {<UseStateDemo2/>}></Route>
+            <Route path="/UseState3" element = {<UseStateDemo3/>}></Route>
+            
       </Routes>
 
 
